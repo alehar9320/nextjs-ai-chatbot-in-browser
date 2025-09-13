@@ -1,8 +1,6 @@
 import { Chat } from '@/components/chat';
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
-import { fn } from 'storybook/test';
-
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'Core/Chat',
@@ -32,14 +30,20 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    id: 'banana',
+    id: 'demo',
     initialMessages: [],
     initialChatModel: 'gpt-4o',
     initialVisibilityType: 'private',
     isReadonly: false,
     session: {
-      expires: '',
-      user: { name: 'Storybook User', email: '  ', image: '' },
+      user: {
+        id: '123456',
+        name: 'John Doe',
+        email: 'john.doe@example.com',
+        image: 'https://example.com/john-doe.jpg',
+        type: 'guest', // can be 'guest' or 'regular'
+      },
+      expires: '2025-10-10T14:00:00.000Z',
     },
     autoResume: false,
   },
