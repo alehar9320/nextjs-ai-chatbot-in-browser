@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import * as Icons from '@/components/icons';
 
 const meta = {
-  title: 'Core/Icons',
+  title: 'Components/Icons',
   // Display all icons in a grid for easy preview
   parameters: {
     layout: 'centered',

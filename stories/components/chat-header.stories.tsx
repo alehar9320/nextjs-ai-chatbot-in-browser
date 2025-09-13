@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { ChatHeader } from '@/components/chat-header';
 
 const meta = {
-  title: 'Core/ChatHeader',
+  title: 'Components/ChatHeader',
   component: ChatHeader,
   parameters: {
     layout: 'centered',

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Greeting } from "@/components/greeting";
 
 const meta = {
-  title: "Core/Greeting",
+  title: "Components/Greeting",
   component: Greeting,
   parameters: {
     layout: "centered",
